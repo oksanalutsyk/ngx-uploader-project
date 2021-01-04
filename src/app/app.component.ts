@@ -26,7 +26,7 @@ export class AppComponent {
     this.options = {
       concurrency: 0,
       maxUploads: 5,
-      maxFileSize: 1000000,
+      maxFileSize: 1000000000,
       allowedContentTypes: [
         'application/pdf',
         'image/jpeg',
@@ -37,7 +37,8 @@ export class AppComponent {
         'application/vnd.ms-excel',
         'application/msword',
         'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-        'application/msexcel'
+        'application/msexcel',
+        'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
       ],
     };
     this.files = []; // local uploading files array
